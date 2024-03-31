@@ -1,0 +1,19 @@
+mport java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in); 
+        
+        int idade_minima = 18; 
+        System.out.println("***Olá Usuario***");
+        System.out.println("Informe sua idade: Idade minima 18 anos");
+        int idade = entrada.nextInt();
+        
+         if (idade <= idade_minima) {
+            System.out.println("Acesso negado");
+         }else{
+         System.out.println("Acesso liberado");
+         }
+    }
+}
